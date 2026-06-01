@@ -38,18 +38,19 @@ const anime = cartoon(); // here now anime becomes the inner function which retu
 const n = anime(); 
 console.log(n);
    
-//case 2
-// function cartoon() {
-//   function cartoonInsideFunction() {
-//     return "naturo🔥";
-//   }
+// case 2
 
-//   return cartoonInsideFunction() // here paranthese return the animen as string so it give the type error: anime is not a function
-// }
+function cartoon() {
+  function cartoonInsideFunction() {
+    return "naturo🔥";
+  }
 
-// const anime = cartoon();
-// const n = anime(); // here anime behaves like a function 
-// console.log(n);
+  return cartoonInsideFunction() // here paranthese return the animen as string so it give the type error: anime is not a function
+}
+
+const anime = cartoon();
+const n = anime(); // here anime behaves like a function 
+console.log(n);
    
 // function can return anything
 
@@ -59,3 +60,13 @@ let cartoonn = function() {
     console.log('anime')
 }
 cartoonn();
+
+
+// concept of the arrow function introduced in es6
+
+const isAllowedToVote = age => age>=18; // here due to one parameter we usully avoid ()
+console.log(isAllowedToVote(23));
+
+
+const isUserAllowedtoOpenAccount = (age,minbalance) => age>=18 && minbalance>=2000;
+console.log(isUserAllowedtoOpenAccount(23,400))
