@@ -6,4 +6,6 @@ console.log ("clue found",clue2)
 
 const suspectName = "nitish"
 const suspectAge = 20;
-console.log ("Suspect:",suspectName,"|Age: ")
+console.log ("Suspect:",suspectName,"|Age:",suspectAge)
+
+
